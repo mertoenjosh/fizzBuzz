@@ -3,19 +3,32 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+  font-weight: 600;
+  text-align: center;
+  background-color: #16a085;
+  color: #fff;
+  padding: 1rem 0rem;
+}
+
 table {
+  /* margin-top: 30rem; */
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   border-collapse: collapse;
-  width: 400px;
-  height: 100px;
+  width: 50rem;
+  /* height: 20rem; */
   border: 1px solid #bdc3c7;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -27,7 +40,7 @@ tr {
 
 th,
 td {
-  padding: 12px;
+  padding: 1.2rem;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -35,14 +48,6 @@ td {
 thead {
   background-color: #16a085;
   color: #fff;
-}
-
-h1 {
-  font-weight: 600;
-  text-align: center;
-  background-color: #16a085;
-  color: #fff;
-  padding: 10px 0px;
 }
 
 tr:hover {
@@ -53,6 +58,6 @@ tr:hover {
 
 @media only screen and (max-width: 768px) {
   table {
-    width: 90%;
+    width: 50%;
   }
 }

@@ -1,5 +1,7 @@
 "use strict";
 
+let rowContainer = document.querySelector(".row-container");
+console.log(rowContainer);
 let num = 100;
 
 for (let i = 1; i <= num; i++) {

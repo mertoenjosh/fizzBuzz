@@ -1,11 +1,13 @@
 "use strict";
 
-let num = parseInt(prompt("Enter number: "));
+let inp = prompt("Enter number: ");
+
+let num = parseInt(inp);
 
 if (!Number.isNaN(num)) {
   console.log(num);
 } else {
-  alert(`${num} is not a number\nWe have initialized 100 for you`);
+  alert(`'${inp}' is not a number\nWe have initialized 100 for you`);
   num = 100;
 }
 

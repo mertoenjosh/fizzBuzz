@@ -47,8 +47,17 @@ td {
 
 thead,
 h1 {
-  background-color: rgb(214, 103, 18);
-  color: #1e2b33;
+  background-color: rgb(199, 114, 49);
+  color: #163455;
+}
+
+.heading {
+  display: inline-block;
+  background-image: linear-gradient(to right, blue, red);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: moveHeading 2s ease infinite;
 }
 
 .row:hover {
@@ -69,6 +78,39 @@ h1 {
 .fizzbuzz,
 .fizzbuzz:hover {
   background-color: #888;
+}
+
+@keyframes moveHeading {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+  30% {
+    transform: translateX(0px);
+  }
+
+  40% {
+    transform: translateX(+10px);
+  }
+
+  60% {
+    transform: translateX(+30px);
+  }
+
+  80% {
+    transform: translateX(+10px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(-30px);
+  }
 }
 
 @media only screen and (max-width: 768px) {

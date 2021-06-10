@@ -1,9 +1,20 @@
 "use strict";
 
+let inp = prompt("Enter number: ");
+
+let num = parseInt(inp);
+
+if (!Number.isNaN(num)) {
+  console.log(num);
+} else {
+  alert(`'${inp}' is not a number\nWe have initialized 100 for you`);
+  num = 100;
+}
+
 let rowContainer = document.querySelector(".row-container");
 console.log(rowContainer);
 
-let num = 100;
+// let num = 100;
 
 const insertHTML = (state, i, bgClass = "") => {
   let html = `

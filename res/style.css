@@ -7,6 +7,8 @@ html {
   /* font-size: 62.5%; */
   font-size: 80%;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -56,8 +58,6 @@ h1 {
   background-image: linear-gradient(to right, blue, red);
   -webkit-background-clip: text;
   color: transparent;
-
-  animation: moveHeading 2s ease infinite;
 }
 
 .row:hover {
@@ -78,39 +78,6 @@ h1 {
 .fizzbuzz,
 .fizzbuzz:hover {
   background-color: #888;
-}
-
-@keyframes moveHeading {
-  0% {
-    transform: translateX(-30px);
-  }
-
-  20% {
-    transform: translateX(-10px);
-  }
-  30% {
-    transform: translateX(0px);
-  }
-
-  40% {
-    transform: translateX(+10px);
-  }
-
-  60% {
-    transform: translateX(+30px);
-  }
-
-  80% {
-    transform: translateX(+10px);
-  }
-
-  90% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(-30px);
-  }
 }
 
 @media only screen and (max-width: 768px) {

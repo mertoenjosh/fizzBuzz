@@ -9,18 +9,18 @@
     <title>Simple fizz buzz challenge</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>
         <span class="heading">FIZZ BUZZ</span>
       </h1>
 
       <nav class="nav-bar">
-        <ol class="nav-bar__links">
+        <ul class="nav-bar__links">
           <li class="nav-bar__links--1">challenge</li>
           <li class="nav-bar__links--2">Instructions</li>
           <li class="nav-bar__links--3"><a href="#">Code</a></li>
           <li class="nav-bar__links--4"><a href="#">Blog</a></li>
-        </ol>
+        </ul>
       </nav>
     </header>
 
@@ -30,7 +30,20 @@
         <th>FIZZ / BUZZ</th>
       </thead>
 
-      <tbody class="row-container"></tbody>
+      <tbody class="row-container">
+        <tr class="row fizz">
+          <td>3</td>
+          <td>Fizz</td>
+        </tr>
+        <tr class="row buzz">
+          <td>5</td>
+          <td>Buzz</td>
+        </tr>
+        <tr class="row fizzbuzz">
+          <td>15</td>
+          <td>FizzBuzz</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>

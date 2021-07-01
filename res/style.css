@@ -1,14 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
   /* font-size: 62.5%; */
   font-size: 80%;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 }
 
 body {
@@ -16,15 +16,25 @@ body {
   background-color: #f5f5f5;
 }
 
+.header {
+  background-color: #163455;
+}
+
+.nav-bar__links {
+  float: right;
+}
+
+.nav-bar__links li {
+  display: inline-block;
+}
+
 h1 {
   font-weight: 600;
-  text-align: center;
-
   padding: 1rem 0rem;
 }
 
 table {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 10%;
   transform: translate(-50%, 0%);
@@ -47,8 +57,7 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-thead,
-h1 {
+thead {
   background-color: rgb(199, 114, 49);
   color: #163455;
 }

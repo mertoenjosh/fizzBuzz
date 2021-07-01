@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -14,15 +16,25 @@ body {
   background-color: #f5f5f5;
 }
 
+.header {
+  background-color: #163455;
+}
+
+.nav-bar__links {
+  float: right;
+}
+
+.nav-bar__links li {
+  display: inline-block;
+}
+
 h1 {
   font-weight: 600;
-  text-align: center;
-
   padding: 1rem 0rem;
 }
 
 table {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 10%;
   transform: translate(-50%, 0%);
@@ -45,8 +57,7 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-thead,
-h1 {
+thead {
   background-color: rgb(199, 114, 49);
   color: #163455;
 }
@@ -56,8 +67,6 @@ h1 {
   background-image: linear-gradient(to right, blue, red);
   -webkit-background-clip: text;
   color: transparent;
-
-  animation: moveHeading 2s ease infinite;
 }
 
 .row:hover {
@@ -78,39 +87,6 @@ h1 {
 .fizzbuzz,
 .fizzbuzz:hover {
   background-color: #888;
-}
-
-@keyframes moveHeading {
-  0% {
-    transform: translateX(-30px);
-  }
-
-  20% {
-    transform: translateX(-10px);
-  }
-  30% {
-    transform: translateX(0px);
-  }
-
-  40% {
-    transform: translateX(+10px);
-  }
-
-  60% {
-    transform: translateX(+30px);
-  }
-
-  80% {
-    transform: translateX(+10px);
-  }
-
-  90% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(-30px);
-  }
 }
 
 @media only screen and (max-width: 768px) {

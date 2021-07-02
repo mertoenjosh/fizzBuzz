@@ -25,31 +25,40 @@
     </header>
 
     <!-- TODO implement pages using positioning -->
-    <section class="section" id="challenge"></section>
+    <!-- TODO challenge should be on its page
+      -Default fizz = 3 buzz = 5 limit = 100
+      - customize
+        > select fizz
+        > select buzz
+        > select limit
+    -->
+    <section class="section" id="challenge">
+      <table>
+        <thead>
+          <th>Number</th>
+          <th>FIZZ / BUZZ</th>
+        </thead>
+
+        <tbody class="row-container">
+          <tr class="row fizz">
+            <td>3</td>
+            <td>Fizz</td>
+          </tr>
+          <tr class="row buzz">
+            <td>5</td>
+            <td>Buzz</td>
+          </tr>
+          <tr class="row fizzbuzz">
+            <td>15</td>
+            <td>FizzBuzz</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
     <section class="section" id="instructions"></section>
 
     <!--  -->
     <!--  -->
-    <table>
-      <thead>
-        <th>Number</th>
-        <th>FIZZ / BUZZ</th>
-      </thead>
-
-      <tbody class="row-container">
-        <tr class="row fizz">
-          <td>3</td>
-          <td>Fizz</td>
-        </tr>
-        <tr class="row buzz">
-          <td>5</td>
-          <td>Buzz</td>
-        </tr>
-        <tr class="row fizzbuzz">
-          <td>15</td>
-          <td>FizzBuzz</td>
-        </tr>
-      </tbody>
-    </table>
   </body>
 </html>
